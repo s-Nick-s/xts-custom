@@ -1,0 +1,8 @@
+C:\R-xts> R CMD INSTALL --build xts --library="C:/R-xts/install" --no-multiarch --no-libs --no-test-load
+
+This library builds WITHOUT DLLs (some errors happen when R tries to compile DLLs)
+
+Copy libs/i836 and x64 from Vlad's computer into the installation directory, and you have good XTS
+
+NB: if your Rtools are installed correctly, you should be able to build the DLLs as well with 
+R CMD INSTALL --build xts --library="C:/R-xts/install" 
